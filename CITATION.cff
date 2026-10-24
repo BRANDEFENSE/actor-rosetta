@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use this data or software, please cite it as below."
+title: "actor-rosetta"
+type: software
+authors:
+  - name: "Brandefense Research Team"
+    website: "https://brandefense.io/"
+repository-code: "https://github.com/BRANDEFENSE/actor-rosetta"
+license: Apache-2.0
+version: 0.1.0
+abstract: "Resolves a threat-actor group name to the group, all its verified names, the primary source for each name, and where sources disagree."
+date-released: "2026-10-24"

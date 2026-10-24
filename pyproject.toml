@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "actor-rosetta"
+dynamic = ["version"]
+description = "Resolve any threat-actor group name to the group, its verified names, the primary source for each name, and where sources disagree."
+readme = "README.md"
+requires-python = ">=3.9"
+license = "Apache-2.0 AND CC-BY-4.0"
+license-files = ["LICENSE", "NOTICE", "data/LICENSE-DATA"]
+authors = [{ name = "Brandefense Research Team", email = "info@brandefense.io" }]
+keywords = ["threat intelligence", "threat actor", "aliases", "APT", "ATT&CK", "MISP", "CTI"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Information Technology",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Security",
+  "Typing :: Typed",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/BRANDEFENSE/actor-rosetta"
+Source = "https://github.com/BRANDEFENSE/actor-rosetta"
+Issues = "https://github.com/BRANDEFENSE/actor-rosetta/issues"
+
+[project.scripts]
+actor-rosetta = "actor_rosetta.cli:main"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.dynamic]
+version = { attr = "actor_rosetta.__version__" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+actor_rosetta = ["data/actors.json", "py.typed"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

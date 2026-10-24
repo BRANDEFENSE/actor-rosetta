@@ -1,0 +1,21 @@
+actor-rosetta
+Copyright 2026 Brandefense. Maintained by the Brandefense Research Team (https://brandefense.io/).
+
+Code: Apache License 2.0 (see LICENSE).
+Data (src/actor_rosetta/data/actors.json): Creative Commons Attribution 4.0 International,
+CC BY 4.0 (see data/LICENSE-DATA). Attribution: "Brandefense Research Team".
+
+MITRE ATT&CK
+ATT&CK group ids and group names are taken from MITRE ATT&CK(R) and used under the MITRE ATT&CK
+Terms of Use (https://attack.mitre.org/resources/legal-and-branding/terms-of-use/).
+"(c) 2015-2026 The MITRE Corporation. This work reproduces and/or references materials created by
+The MITRE Corporation. ATT&CK(R) is a registered trademark of The MITRE Corporation."
+Reproduced here: ids, names and links only.
+
+MISP galaxy
+The MISP galaxy threat-actor clusters (CC0 1.0, https://github.com/MISP/misp-galaxy) informed the
+building of the list of candidate groups. The MISP galaxy tag in the data is a name reference only.
+
+Other names
+Group names belong to the vendors and agencies that coined them; they are listed here as
+references to the page where each vendor or agency publishes the name.
